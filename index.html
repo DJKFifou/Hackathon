@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon</title>
     <link href="dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="./src/js/index.js"></script>
+   
 </head>
-<body class="bg-slate-400">
-    <h1 class="font-bold">Test</h1>
+<body class="relative w-full min-h-screen flex flex-col">
+    <header class="fixed right-4 top-1/2 -translate-y-1/2 h-[80vh] w-1">
+        <div class="relative flex flex-col w-full h-full">
+            <div class="absolute right-0 top-0 h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+            <div class="absolute right-0 top-[20%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+            <div class="absolute right-0 top-[40%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+            <div class="absolute right-0 top-[60%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+            <div class="absolute right-0 top-[80%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+        </div>
+    </header>
+
+    <section class="h-screen flex items-center justify-center bg-zinc-800">
+        <h1 class="text-9xl font-bold text-white">Hackathon</h1>
+    </section>
+
+    <section id="rotate-section" class="h-screen bg-white">
+        <img id="rotate-image" class="h-full object-contain" src="./src/assets/Img-1.png" alt="Rotation Image">
+    </section>
+
+    <section class="h-screen bg-stone-600"></section>
+
+    <section id="lines" class="h-screen bg-white relative overflow-hidden">
+        <div id="scroll-line-vertical" class="absolute bottom-0 left-2/3 w-1 bg-black transition-all duration-100 ease-out h-0"></div>
+        <div id="scroll-line-horizontal-left" class="absolute bottom-1/4 left-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
+        <div id="scroll-line-horizontal-right" class="absolute top-1/4 right-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
+    </section>
+
+    <section class="h-screen bg-stone-600"></section>
+
+    <section id="videoContent">
+        <video id="myVideo" class="w-full" src="./src/assets/sunset.mp4" loop muted preload="auto"></video>
+    </section>
+
+    <section id="lastSection" class="h-screen bg-white z-10"></section>
+    
+    <div id="footer-container" class="">
+        <footer class="sticky bottom-0 overflow-hidden bg-cyan-700">
+            <h2 class="text-9xl">Hackathon</h2>
+            <h2 class="text-9xl">Hackathon</h2>
+            <h2 class="text-9xl">Hackathon</h2>
+            <h2 class="text-9xl">Hackathon</h2>
+            <h2 class="text-9xl">Hackathon</h2>
+        </footer>
+    </div>
 </body>
+
 </html>

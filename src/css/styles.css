@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#footer-container::before {
+  content: "";
+  display: block;
+  height: var(--before-height);
+}
