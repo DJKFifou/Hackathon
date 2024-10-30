@@ -2,8 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "compacta";
+  src: url("../fonts/compacta.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "suisse";
+  src: url("../fonts/suisse_intl_book.woff2") format("woff2");
+  font-display: swap;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 #footer-container::before {
   content: "";
   display: block;
   height: var(--before-height);
+}
+
+.swiper-pagination-bullet {
+  @apply !w-5 !h-5;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-blue;
 }

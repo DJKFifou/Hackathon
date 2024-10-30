@@ -7,8 +7,12 @@
     <title>Hackathon</title>
     <link href="dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./src/js/index.js"></script>
-
+    <script defer src="./src/js/slider.js"></script>
+    <script defer src="./src/js/faq.js"></script>
+    <script defer src="./src/js/footer.js"></script>
 </head>
 
 <body class="relative w-full min-h-screen flex flex-col">
@@ -26,15 +30,13 @@
         </div>
     </header>
 
-    <section class="h-screen flex items-center justify-center bg-zinc-800">
+    <section id="hero" class="h-screen flex items-center justify-center bg-black">
         <h1 class="text-9xl font-bold text-white">Hackathon</h1>
     </section>
 
     <section id="rotate-section" class="h-screen bg-white">
         <img id="rotate-image" class="h-full object-contain" src="./src/assets/Img-1.png" alt="Rotation Image">
-    </section>
-
-    <section class="h-screen bg-stone-600"></section>
+    </section>$
 
     <section id="lines" class="h-screen bg-white relative overflow-hidden">
         <div id="scroll-line-vertical"
@@ -45,17 +47,130 @@
             class="absolute top-1/4 right-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
     </section>
 
-    <section class="h-screen bg-stone-600"></section>
-
-    <!-- <section id="videoContent">
-        <video id="myVideo" class="w-full" src="./src/assets/sunset.mp4" loop muted preload="auto"></video>
-    </section> -->
-
-    <section id="bricksAnimation" class="h-screen bg-slate-300">
+    <section id="bricksAnimation" class="bg-slate-300">
         <img id="brick" class="h-full object-contain" src="./src/assets/bricksAnimation/0001.webp" alt="Rotation Image">
     </section>
 
-    <section class="flex justify-center items-center py-24 bg-black text-white">
+    <section id="product" class="container mx-auto grid grid-cols-2 gap-32 py-20">
+        <img class="h-[50rem] w-full object-cover" src="./src/assets/tapis.png" alt="">
+        <div class="flex flex-col justify-between">
+            <div class="flex flex-col">
+                <div class="flex justify-between items-end pb-8 border-b border-black">
+                    <h3 class="text-4xl font-medium">Tapis Jaimal</h3>
+                    <p>200x300cm</p>
+                </div>
+                <p class="pt-8">Imaginez un tapis qui ajoute du caractère à votre intérieur, et où chaque pas devient une aventure.</p>
+                <span class="pt-8 text-3xl font-bold">550€</span>
+                <button class="p-4 mt-8 border border-black">Commander</button>
+            </div>
+            <div class="flex flex-col">
+                <div class="py-5 border-b border-black">
+                    <h3 class="faq_question relative pr-8 text-2xl font-medium cursor-pointer">
+                        Description
+                        <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                            <img src="./src/assets/blackPlus.svg" alt="plus" class="w-6 rotate-45">
+                        </span>
+                    </h3>
+                    <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                        <p>Réponse</p>
+                    </div>
+                </div>
+                <div class="py-5 border-b border-black">
+                    <h3 class="faq_question relative pr-8 text-2xl font-medium cursor-pointer">
+                        Livraison
+                        <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                            <img src="./src/assets/blackPlus.svg" alt="plus" class="w-6 rotate-45">
+                        </span>
+                    </h3>
+                    <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                        <p>Réponse</p>
+                    </div>
+                </div>
+                <div class="py-5 border-b border-black">
+                    <h3 class="faq_question relative pr-8 text-2xl font-medium cursor-pointer">
+                        Avis
+                        <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                            <img src="./src/assets/blackPlus.svg" alt="plus" class="w-6 rotate-45">
+                        </span>
+                    </h3>
+                    <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                        <p>Réponse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packs" class="container mx-auto grid grid-cols-3 gap-6 h-[50rem] py-20">
+        <div class="flex flex-col gap-10">
+            <img class="h-full object-cover" src="./src/assets/tapis.png" alt="">
+            <div class="flex flex-col gap-6">
+                <h4>Pack sportif</h4>
+                <p>Cuvette de toilette + Tapis de WC</p>
+                <span>250€</span>
+            </div>
+            <button class="py-5 text-2xl bg-blue color-green">Choisir ce pack</button>
+        </div>
+        <div class="flex flex-col gap-10">
+            <img class="h-full object-cover" src="./src/assets/tapis.png" alt="">
+            <div class="flex flex-col gap-6">
+                <h4>Pack sportif</h4>
+                <p>Cuvette de toilette + Tapis de WC</p>
+                <span>250€</span>
+            </div>
+            <button class="py-5 text-2xl bg-blue color-green">Choisir ce pack</button>
+        </div>
+        <div class="flex flex-col gap-10">
+            <img class="h-full object-cover" src="./src/assets/tapis.png" alt="">
+            <div class="flex flex-col gap-6">
+                <h4>Pack sportif</h4>
+                <p>Cuvette de toilette + Tapis de WC</p>
+                <span>250€</span>
+            </div>
+            <button class="py-5 text-2xl bg-blue color-green">Choisir ce pack</button>
+        </div>
+    </section>
+
+    <section id="reviews" class="container mx-auto flex flex-col items-center gap-16 py-20">
+        <h2 class="text-blue text-4xl font-bold">Ce que nos clients disent sur nous</h2>
+        <div class="swiper-container relative max-w-full overflow-hidden pb-20">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide !flex flex-col gap-16">
+                    <h3 class="text-center text-4xl font-medium">"Mon mari a perdu 7 kilos depuis que j’ai placé Jaimal devant notre frigo, merci EGOL !” </h3>
+                    <div class="flex justify-center items-center gap-4">
+                        <img src="./src/assets/face.svg" alt="">
+                        <div class="flex flex-col">
+                            <h5 class="text-xl font-bold">Julie Doe</h5>
+                            <p>RH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide !flex flex-col gap-16">
+                    <h3 class="text-center text-4xl font-medium">"Mon mari a perdu 7 kilos depuis que j’ai placé Jaimal devant notre frigo, merci EGOL !” </h3>
+                    <div class="flex justify-center items-center gap-4">
+                        <img src="./src/assets/face.svg" alt="">
+                        <div class="flex flex-col">
+                            <h5 class="text-xl font-bold">Julie Doe</h5>
+                            <p>RH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide !flex flex-col gap-16">
+                    <h3 class="text-center text-4xl font-medium">"Mon mari a perdu 7 kilos depuis que j’ai placé Jaimal devant notre frigo, merci EGOL !” </h3>
+                    <div class="flex justify-center items-center gap-4">
+                        <img src="./src/assets/face.svg" alt="">
+                        <div class="flex flex-col">
+                            <h5 class="text-xl font-bold">Julie Doe</h5>
+                            <p>RH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="faq" class="flex justify-center items-center py-24 bg-black text-white z-10">
         <div class="max-w-2xl">
             <h1 class="font-medium text-4xl">FAQ</h1>
             <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
@@ -138,15 +253,73 @@
         </div>
     </section>
 
-    <section id="lastSection" class="h-screen bg-white z-10"></section>
-
     <div id="footer-container" class="">
-        <footer class="sticky bottom-0 overflow-hidden bg-cyan-700">
-            <h2 class="text-9xl">Hackathon</h2>
-            <h2 class="text-9xl">Hackathon</h2>
-            <h2 class="text-9xl">Hackathon</h2>
-            <h2 class="text-9xl">Hackathon</h2>
-            <h2 class="text-9xl">Hackathon</h2>
+        <footer class="sticky bottom-0 flex flex-col gap-8 pt-20 overflow-hidden bg-lightBlue">
+            <div class="container mx-auto flex flex-col gap-40">
+                <div class="grid grid-cols-3">
+                    <div>
+                        <img class="w-40" src="./src/assets/logo_egol_black.svg" alt="Logo Egol">
+                    </div>
+                    <ul class="flex flex-col gap-4 text-xl">
+                        <li>
+                            <a href="#hero">Home</a>
+                        </li>
+                        <li>
+                            <a href="#bricksAnimation">Concept</a>
+                        </li>
+                        <li>
+                            <a href="#product">Produit</a>
+                        </li>
+                        <li>
+                            <a href="#packs">Packs</a>
+                        </li>
+                        <li>
+                            <a href="#reviews">Avis</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="flex flex-col gap-5">
+                        <h4 class="text-xl font-semibold">Inscrivez-vous à notre newsletter</h4>
+                        <p class="font-medium">Pour suivre notre actualité et être tenu au courant de nos nouveautés ! </p>
+                        <div class="flex h-12">
+                            <input class="h-full w-full px-4" type="text" placeholder="Your email address…">
+                            <button class="h-full px-4 bg-black text-white font-medium">Envoyer</button>
+                        </div>
+                        <ul class="flex gap-8 mt-10">
+                            <li>
+                                <a href="">
+                                    <img src="./src/assets/socials/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./src/assets/socials/linkedin.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./src/assets/socials/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./src/assets/socials/youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./src/assets/socials/instagram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="">
+                    <p class="py-5 border-t border-black opacity-50 text-md text-center">© 2024 Egol. All rights reserved.</p>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
