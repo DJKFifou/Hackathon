@@ -5,17 +5,21 @@ module.exports = {
     extend: {
       colors: {
         'black': "#090F1E",
-        'offWhite': '##FFFBEE',
+        'offWhite': '#FFFBEE',
         'green': '#08BC80',
         'blue': '#7482E8',
         'lightBlue': '#E7ECFF',
+        'orange': '#EE7163',
         'red': '#FE0100',
         'yellow': '#F9D523'
       },
-      // fontFamily: {
-      //   title: ["compacta", ...defaultTheme.fontFamily.sans],
-      //   body: ["suisse", ...defaultTheme.fontFamily.sans]
-      // },
+      backgroundImage: {
+        'image': "url('./src/assets/bg-image.svg')",
+      },
+      fontFamily: {
+        title: ["BaiJamjuree", 'sans-serif'],
+        body: ["Noka", 'sans-serif']
+      },
       screens: {
         "4xs": "320px",
         "3xs": "380px",
