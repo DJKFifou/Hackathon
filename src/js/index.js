@@ -67,27 +67,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //SECTION VIDEO
 
-    const video = document.getElementById('myVideo');
-    let lastScrollTop = 0;
-    let isVideoReady = false;
+    // const video = document.getElementById('myVideo');
+    // let lastScrollTop = 0;
+    // let isVideoReady = false;
 
-    video.addEventListener('canplaythrough', () => {
-        isVideoReady = true;
-    });
+    // video.addEventListener('canplaythrough', () => {
+    //     isVideoReady = true;
+    // });
 
-    window.addEventListener('scroll', () => {
-        if (!isVideoReady) return;
+    // window.addEventListener('scroll', () => {
+    //     if (!isVideoReady) return;
 
-        const scrollTop = window.scrollY;
-        let delta = scrollTop - lastScrollTop;
-        lastScrollTop = scrollTop;
+    //     const scrollTop = window.scrollY;
+    //     let delta = scrollTop - lastScrollTop;
+    //     lastScrollTop = scrollTop;
       
-        const secondsToAdd = delta * 0.01;
-        console.log('secondsToAdd', secondsToAdd);
+    //     const secondsToAdd = delta * 0.01;
+    //     console.log('secondsToAdd', secondsToAdd);
         
-        let newTime = video.currentTime + secondsToAdd;
-        if (!isNaN(newTime) && newTime >= 0 && newTime <= video.duration) {
-            video.currentTime = newTime;
+    //     let newTime = video.currentTime + secondsToAdd;
+    //     if (!isNaN(newTime) && newTime >= 0 && newTime <= video.duration) {
+    //         video.currentTime = newTime;
+    //     }
+    // });
+
+    //SECTION IMAGES ROTATION
+
+    const bricksAnimation = document.getElementById("bricksAnimation");
+    const brick = document.getElementById("brick");
+
+    const bricks = [];
+    for (let i = 1; i <= 100; i++) {
+        const imageNumber = String(i).padStart(4, '0');
+        bricks.push(`./src/assets/bricksAnimation/${imageNumber}.webp`);
+    }
+    console.log('bricks', bricks);
+
+    const totalBricks = bricks.length;
+
+    window.addEventListener("scroll", () => {
+        const sectionTop = bricksAnimation.offsetTop;
+        const sectionHeight = bricksAnimation.offsetHeight;
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const startScrollPosition = sectionTop + sectionHeight * 0.5;
+        const endScrollPosition = sectionTop + sectionHeight * 1.3;
+
+        if (scrollPosition > startScrollPosition && scrollPosition < endScrollPosition) {
+            const adjustedProgress = (scrollPosition - startScrollPosition) / (endScrollPosition - startScrollPosition);
+            const imageIndex = Math.min(
+                Math.floor(adjustedProgress * totalBricks),
+                totalBricks - 1
+            );
+            brick.src = bricks[imageIndex];
         }
     });
 
