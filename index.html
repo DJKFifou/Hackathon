@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,21 @@
     <link href="dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="./src/js/index.js"></script>
-   
+
 </head>
+
 <body class="relative w-full min-h-screen flex flex-col">
     <header class="fixed right-4 top-1/2 -translate-y-1/2 h-[80vh] w-1">
         <div class="relative flex flex-col w-full h-full">
             <div class="absolute right-0 top-0 h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-            <div class="absolute right-0 top-[20%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-            <div class="absolute right-0 top-[40%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-            <div class="absolute right-0 top-[60%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-            <div class="absolute right-0 top-[80%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+            <div class="absolute right-0 top-[20%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all">
+            </div>
+            <div class="absolute right-0 top-[40%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all">
+            </div>
+            <div class="absolute right-0 top-[60%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all">
+            </div>
+            <div class="absolute right-0 top-[80%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all">
+            </div>
         </div>
     </header>
 
@@ -31,9 +37,12 @@
     <section class="h-screen bg-stone-600"></section>
 
     <section id="lines" class="h-screen bg-white relative overflow-hidden">
-        <div id="scroll-line-vertical" class="absolute bottom-0 left-2/3 w-1 bg-black transition-all duration-100 ease-out h-0"></div>
-        <div id="scroll-line-horizontal-left" class="absolute bottom-1/4 left-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
-        <div id="scroll-line-horizontal-right" class="absolute top-1/4 right-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
+        <div id="scroll-line-vertical"
+            class="absolute bottom-0 left-2/3 w-1 bg-black transition-all duration-100 ease-out h-0"></div>
+        <div id="scroll-line-horizontal-left"
+            class="absolute bottom-1/4 left-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
+        <div id="scroll-line-horizontal-right"
+            class="absolute top-1/4 right-0 h-1 bg-black transition-all duration-100 ease-out w-0"></div>
     </section>
 
     <section class="h-screen bg-stone-600"></section>
@@ -46,8 +55,91 @@
         <img id="brick" class="h-full object-contain" src="./src/assets/bricksAnimation/0001.webp" alt="Rotation Image">
     </section>
 
+    <section class="flex justify-center items-center py-24 bg-black text-white">
+        <div class="max-w-2xl">
+            <h1 class="font-medium text-4xl">FAQ</h1>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-8 cursor-pointer">
+                    Est-ce que ce tapis est confortable ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                    Ce tapis est-il adapté aux enfants ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                    Peut-on marcher dessus pieds nus ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                    Quelle est la durée de vie du tapis ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                    Est-il facile d'entretien ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                    Ce tapis convient-il aux animaux de compagnie ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+            <div class="flex flex-col pt-6 mt-6 border-t border-[#FFFFFF44]">
+                <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                    Quelle est la politique de retour ?
+                    <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                        <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                    </span>
+                </h3>
+                <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                    <p>Réponse</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="lastSection" class="h-screen bg-white z-10"></section>
-    
+
     <div id="footer-container" class="">
         <footer class="sticky bottom-0 overflow-hidden bg-cyan-700">
             <h2 class="text-9xl">Hackathon</h2>
