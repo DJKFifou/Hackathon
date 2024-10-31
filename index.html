@@ -24,9 +24,9 @@
         <video id="videoLoader" class="h-full w-full object-cover" src="./src/assets/Loader.mp4" muted autoplay playsinline></video>
     </section>
 
-    <main class="absolute opacity-0 transition-all duration-500">
+    <main class="absolute opacity-0 transition-all duration-500 w-full">
 
-        <header class="fixed right-4 top-1/2 -translate-y-1/2 h-[80vh] w-1">
+        <header class="fixed right-4 top-1/2 -translate-y-1/2 h-[80vh] w-1 z-10">
             <div class="relative flex flex-col w-full h-full">
                 <div class="absolute right-0 top-0 h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
                 <div class="absolute right-0 top-[20%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
@@ -55,16 +55,26 @@
                 <div class="col-span-5 flex flex-col gap-6 mr-8">
                     <div class="flex items-center gap-6">
                         <span class="h-0.5 w-20 bg-green"></span>
-                        <h5 class="text-lg font-semibold text-green">CHALLENGEZ-VOUS</h5>
+                        <h5 class="text-lg font-semibold text-green">NOTRE BEST SELLER</h5>
                     </div>
-                    <h2 class="text-5xl font-semibold text-black/80">Augmentez votre <br>résistance à la douleur</h2>
-                    <p class="pt-4 text-xl">
-                        Conçu pour ceux qui n’ont pas froid aux pieds, le tapis Egol repousse les limites du confort. Chaque pas devient un exercice de maîtrise de soi et de dépassement, renforçant votre résistance à la douleur. 
-                        <br><br>
-                        Nos tapis en briques de construction développent posture, volonté d’acier et conscience musculaire. 
-                        <br><br>
-                        Pour un réveil tonique ou un défi quotidien, ajoutez une touche de fun et de piquant à votre intérieur avec Egol, et testez vos limites directement chez vous.
+                    <h2 class="text-5xl font-semibold text-black/80">Tapis Jaimal</h2>
+                    <p class="pt-4  text-2xl font-medium">
+                        Notre tapis en briques de construction. <br>
+                        Transformez chaque déplacement en une expérience pour les pieds et l’esprit.
                     </p>
+                    <div class="flex gap-5 text-2xl font-medium">
+                        <div class="flex gap-2 before:content-[''] before:inline-block before:w-2 before:h-2 before:bg-green before:rounded-full before:mt-3">
+                            <p>
+                                Dimensions <br> de 2m x 3m
+                              </p>
+                        </div>
+                        <div class="flex gap-2 before:content-[''] before:inline-block before:w-2 before:h-2 before:bg-green before:rounded-full before:mt-3">
+                            <p>
+                                Différentes <br> matières
+                              </p>
+                        </div>
+                    </div>
+                    <button class="w-full px-4 py-3 bg-green text-white font-semibold">JE VIS L’EXPÉRIENCE</button>
                 </div>
                 <div class="col-span-2 grid grid-rows-3 gap-4">
                     <img class="h-full w-full object-cover" src="./src/assets/tapis.jpg" alt="">
@@ -119,9 +129,11 @@
                     Adieu pieds sensibles et bonjour l’aventure à chaque foulée : ici, chaque pas est un défi qui vous ancre dans l’instant présent, pour un intérieur qui ne manque ni de caractère, ni de piquant !
                 </p>
             </div>
-            <div class="relative mt-40">
-                <img class="" src="./src/assets/tapis.jpg" alt="">
-                <div class="absolute top-12 right-12 w-full h-full bg-green -z-10"></div>
+            <div class="mt-40">
+                <div class="relative w-fit">
+                    <img class="" src="./src/assets/tapis.jpg" alt="">
+                    <div class="absolute top-12 right-12 w-full h-full bg-green -z-10"></div>
+                </div>
             </div>
         </section>
     
@@ -279,12 +291,56 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
-    
-        <section>
-    
+
+        <h2 class="container mx-auto py-5 text-5xl font-semibold font-title">Pour continuer l’expérience</h2>
+        <section class="px-6 py-20 bg-[#AFEDD8]">
+            <div class="mini-container mx-auto grid grid-cols-3 items-center gap-20">
+                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
+                <div class="col-span-2 flex flex-col gap-10 w-4/5">
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
+                        <p>Pour faire genre de travailler</p>
+                    </div>
+                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
+                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
+                    <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="px-6 py-20 bg-blue">
+            <div class="mini-container mx-auto grid grid-cols-3 items-center gap-20">
+                <div class="col-span-2 flex flex-col gap-10 w-4/5">
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
+                        <p>Pour faire genre de travailler</p>
+                    </div>
+                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
+                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
+                    <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
+                </div>
+                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="px-6 py-20 bg-red">
+            <div class="mini-container mx-auto grid grid-cols-3 items-center gap-20">
+                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
+                <div class="col-span-2 flex flex-col gap-10 w-4/5">
+                    <div class="flex flex-col gap-2">
+                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
+                        <p>Pour faire genre de travailler</p>
+                    </div>
+                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
+                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
+                    <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
+                </div>
+            </div>
         </section>
     
-        <section id="reviews" class="container mx-auto flex flex-col items-center gap-16 py-20">
+        <section id="reviews" class="mini-container mx-auto flex flex-col items-center gap-16 py-20">
             <h2 class="text-blue text-4xl font-bold">Ce que nos clients disent sur nous</h2>
             <div class="swiper-reviews relative max-w-full overflow-hidden pb-20">
                 <div class="swiper-wrapper">
@@ -322,60 +378,12 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-
-        <h2 class="container mx-auto py-5 text-5xl font-semibold font-title">Pour continuer l’expérience</h2>
-        <section class="px-6 py-20 bg-[#AFEDD8]">
-            <div class="container mx-auto grid grid-cols-3 items-center gap-20">
-                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
-                <div class="col-span-2 flex flex-col gap-10">
-                    <div class="flex flex-col gap-2">
-                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
-                        <p>Pour faire genre de travailler</p>
-                    </div>
-                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
-                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
-                    <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="px-6 py-20 bg-blue">
-            <div class="container mx-auto grid grid-cols-3 items-center gap-20">
-                <div class="col-span-2 flex flex-col gap-10">
-                    <div class="flex flex-col gap-2">
-                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
-                        <p>Pour faire genre de travailler</p>
-                    </div>
-                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
-                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
-                    <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
-                </div>
-                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
-            </div>
-        </section>
-
-
-        <section class="px-6 py-20 bg-red">
-            <div class="container mx-auto grid grid-cols-3 items-center gap-20">
-                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
-                <div class="col-span-2 flex flex-col gap-10">
-                    <div class="flex flex-col gap-2">
-                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
-                        <p>Pour faire genre de travailler</p>
-                    </div>
-                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
-                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
-                    <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
-                </div>
-            </div>
-        </section>
     
-        <section id="faq" class="flex justify-center items-center py-24 bg-blue text-white z-10">
+        <section id="faq" class="flex justify-center items-center py-24 bg-blue text-white z-10 overflow-hidden">
             <div class="container mx-auto">
                 <h1 class="font-medium text-4xl">FAQ</h1>
                 <div class="grid grid-cols-2 gap-x-20">
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
                         <h3 class="faq_question relative text-2xl pr-8 cursor-pointer">
                             Est-ce que ce tapis est confortable ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
@@ -383,10 +391,10 @@
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Non.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
                         <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
                             Ce tapis est-il adapté aux enfants ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
@@ -394,10 +402,10 @@
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Oui.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
                         <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
                             Peut-on marcher dessus pieds nus ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
@@ -405,10 +413,10 @@
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Oui.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
                         <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
                             Quelle est la durée de vie du tapis ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
@@ -416,10 +424,10 @@
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Longue.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
                         <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
                             Est-il facile d'entretien ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
@@ -427,10 +435,10 @@
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Oui.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
                         <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
                             Ce tapis convient-il aux animaux de compagnie ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
@@ -438,18 +446,18 @@
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Oui.</p>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-[#FFFFFF44]">
+                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
                         <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Quelle est la politique de retour ?
+                            Y'a t-il une politique de retour ?
                             <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
                                 <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
                             </span>
                         </h3>
                         <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Réponse</p>
+                            <p>Non.</p>
                         </div>
                     </div>
                 </div>

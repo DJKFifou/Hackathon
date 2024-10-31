@@ -67,3 +67,67 @@
 .swiper-bricks .swiper-button-next {
   @apply !right-0;
 }
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-left.visible,
+.animate-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mini-container {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .mini-container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 380px) {
+  .mini-container {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 430px) {
+  .mini-container {
+    max-width: 430px;
+  }
+}
+
+@media (min-width: 530px) {
+  .mini-container {
+    max-width: 530px;
+  }
+}
+
+@media (min-width: 640px) {
+  .mini-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mini-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mini-container {
+    max-width: 1024px;
+  }
+}
