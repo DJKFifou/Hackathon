@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       colors: {
         'black': "#090F1E",
+        'grey': '#E9E8ED',
         'offWhite': '#FFFBEE',
         'green': '#08BC80',
         'blue': '#7482E8',
         'lightBlue': '#E7ECFF',
         'orange': '#EE7163',
-        'red': '#FE0100',
+        'red': '#FA9E9F',
         'yellow': '#F9D523'
       },
       backgroundImage: {
