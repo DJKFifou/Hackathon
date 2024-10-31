@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noka:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./src/js/index.js"></script>
-    <script defer src="./src/js/loader.js"></script>
+    <!-- <script defer src="./src/js/loader.js"></script> -->
     <script defer src="./src/js/lines.js"></script>
     <script defer src="./src/js/rotations.js"></script>
     <script defer src="./src/js/sliders.js"></script>
@@ -23,13 +23,13 @@
 </head>
 
 
-<body class="relative w-full min-h-screen flex flex-col bg-offWhite overflow-hidden">
+<body class="relative w-full min-h-screen flex flex-col bg-offWhite">
 
     <section id="loader" class="absolute h-screen w-full opacity-100 transition-all duration-500">
         <video id="videoLoader" class="h-full w-full object-cover" src="./src/assets/Loader.mp4" muted autoplay playsinline></video>
     </section>
 
-    <main class="absolute opacity-0 transition-all duration-500 w-full">
+    <main class="absolute opacity-100 transition-all duration-500 w-full">
         
         <a href="/" class="fixed top-8 left-1/2 -translate-x-1/2 z-10">
             <img id="logo" class="w-24" src="./src/assets/logo_egol_white.svg" alt="">
@@ -81,6 +81,24 @@
             <h2 class="text-5xl bai-jamjuree-semibold">moderne et <br><span class="text-orange">original</span></h2>
             <img id="brick" class="h-full w-full object-contain mt-10 scale-125" src="./src/assets/bricksAnimation/0001.webp" alt="Rotation Image">
         </section>
+
+        <section class="relative grid grid-cols-3">
+            <div class="absolute left-0 w-1/2">
+                <img src="./src/assets/tapis_coin.png" alt="">
+            </div>
+            <div class="col-start-2 col-end-4 flex flex-col gap-8 pb-80 w-8/12">
+                <h2 class="text-5xl bai-jamjuree-semibold">La marque</h2>
+                <p class="text-xl font-semibold">
+                    <span class="text-blue">Egol</span> est une marque qui a choisi de défier les conventions en transformant un objet simple, le tapis, en une <span class="text-blue">expérience unique. </span>
+                    <br><br>
+                    Avec nos tapis en briques de construction, nous avons créé bien plus qu’un simple tapis, c’est un <span class="text-blue">voyage sensoriel et ludique</span> qui s’invite chez vous.
+                </p>
+                <div class="relative flex justify-end w-full mt-16">
+                    <button class="col-start-3 col-end-4 w-fit px-8 py-3 bg-blue text-white transition-all hover:bg-transparent hover:text-blue border border-blue">DÉCOUVREZ LE CONCEPT</button>
+                    <img class="absolute -bottom-64" src="./src/assets/vectors/Vector_6.svg" alt="">
+                </div>
+            </div>
+        </section>
     
         <section id="product" class="relative py-20 bg-grey">
             <div class="container mx-auto grid grid-cols-12 gap-5">
@@ -116,7 +134,7 @@
                               </p>
                         </div>
                     </div>
-                    <button class="w-fit px-8 py-3 bg-green text-white font-semibold">PRÉCOMMANDER</button>
+                    <button class="w-fit px-8 py-3 bg-green text-white font-semibold transition-all hover:bg-transparent hover:text-green border border-green">PRÉCOMMANDER</button>
                 </div>
                 <div class="col-span-2 grid grid-rows-3 gap-4 max-h-[36rem]">
                     <img class="h-full w-full object-cover" src="./src/assets/tapis/tapis_jamal_4.png" alt="">
@@ -178,7 +196,7 @@
                     <br><br>
                     Adieu pieds sensibles et bonjour l’aventure à chaque foulée : ici, chaque pas est un défi qui vous ancre dans l’instant présent, pour un intérieur qui ne manque ni de caractère, ni de piquant !
                 </p>
-                <button class="w-fit px-8 py-3 mt-8 bg-blue text-white font-semibold">CONSTRUISEZ VOTRE EXPÉRIENCE</button>
+                <button class="w-fit px-8 py-3 mt-8 bg-blue text-white font-semibold transition-all hover:bg-transparent hover:text-blue border border-blue">CONSTRUISEZ VOTRE EXPÉRIENCE</button>
             </div>
             <div class="mt-40">
                 <div class="relative w-fit">
@@ -273,7 +291,7 @@
                     </div>
                     <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
                         Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
-                    <button class="w-fit px-8 py-3 bg-red text-white font-semibold">JE VIS L’EXPÉRIENCE</button>
+                    <button class="w-fit px-8 py-3 bg-red text-white font-semibold transition-all hover:bg-transparent hover:text-red border border-red">JE VIS L’EXPÉRIENCE</button>
                 </div>
             </div>
         </section>
@@ -286,7 +304,7 @@
                         <p>Plus d’excuse pour passer du temps aux toilettes</p>
                     </div>
                     <p>Avec notre cuvette unique, optimisez chaque instant et boostez votre productivité. Parce que même les petites pauses méritent d’être efficaces !</p>
-                    <button class="w-fit px-8 py-3 bg-green text-white font-semibold">JE VIS L’EXPÉRIENCE</button>
+                    <button class="w-fit px-8 py-3 bg-green text-white font-semibold transition-all hover:bg-transparent hover:text-green border border-green">JE VIS L’EXPÉRIENCE</button>
                 </div>
                 <img class="h-[30rem] object-cover" src="./src/assets/packs/PACK2.webp" alt="">
             </div>
@@ -304,7 +322,7 @@
                         Avec nos semelles Egol, le confort est au rendez-vous pour faire vos meilleurs chronos !  Ce pack contient également un tapis de yoga pour que vous releviez chaque posture avec courage. 
                         <br><br>
                         Une expérience sportive unique qui va, à coup sûr, muscler votre motivation !</p>
-                    <button class="w-fit px-8 py-3 bg-blue text-white font-semibold">JE VIS L’EXPÉRIENCE</button>
+                    <button class="w-fit px-8 py-3 bg-blue text-white font-semibold transition-all hover:bg-transparent hover:text-blue border border-blue">JE VIS L’EXPÉRIENCE</button>
                 </div>
             </div>
         </section>
@@ -355,7 +373,7 @@
                     <div class="swiper-slide !flex flex-col gap-16">
                         <div class="flex flex-col gap-2">
                             <h2 class="text-center text-4xl font-bold">Un game changer</h2>
-                            <h3 class="text-center text-3xl font-medium">"Dites adieu aux pieds trop sensibles ! Ce tapis en Lego m’a offert une solution durable pour m’endurcir au quotidien. Parfait pour ceux qui veulent ressentir chaque pas."</h3>
+                            <h3 class="text-center text-3xl font-medium">"Dites adieu aux pieds trop sensibles ! Ce tapis en briques m’a offert une solution durable pour m’endurcir au quotidien. Parfait pour ceux qui veulent ressentir chaque pas."</h3>
                         </div>
                         <div class="flex justify-center items-center gap-4">
                             <img class="w-24 h-24 object-cover rounded-full" src="./src/assets/reviews/paul.png" alt="">

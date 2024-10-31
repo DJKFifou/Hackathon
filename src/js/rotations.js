@@ -9,6 +9,16 @@ for (let i = 1; i <= 100; i++) {
 
 const totalBricks = bricks.length;
 
+function checkInitialScrollPosition() {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const sectionTop = bricksAnimation.offsetTop;
+    const sectionHeight = bricksAnimation.offsetHeight;
+    
+    scrollPosition > sectionTop + sectionHeight ? brick.src = bricks[99] : brick.src = bricks[0];
+}
+
+window.addEventListener("load", checkInitialScrollPosition);
+
 window.addEventListener("scroll", () => {
     const sectionTop = bricksAnimation.offsetTop;
     const sectionHeight = bricksAnimation.offsetHeight;
