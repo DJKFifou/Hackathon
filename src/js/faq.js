@@ -1,9 +1,8 @@
 const faqQuestions = document.querySelectorAll(".faq_question");
 const animatedElements = document.querySelectorAll('.animate-left, .animate-right');
 let lastScrollTop = 0;
-let hasBeenVisible = new Set(); // Pour tracker les éléments qui ont déjà été visibles
+let hasBeenVisible = new Set();
 
-// Gestion des questions FAQ
 faqQuestions.forEach((question) => {
     question.addEventListener("click", () => {
         const answer = question.nextElementSibling;
@@ -14,7 +13,6 @@ faqQuestions.forEach((question) => {
     });
 });
 
-// Fonction pour vérifier si un élément est visible
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
     const windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -22,7 +20,6 @@ function isElementInViewport(element) {
     return rect.top <= triggerPoint;
 }
 
-// Fonction pour animer les éléments en fonction du scroll
 function animateOnScroll() {
     const st = window.pageYOffset || document.documentElement.scrollTop;
     const scrollingDown = st > lastScrollTop;
@@ -31,9 +28,9 @@ function animateOnScroll() {
         const isVisible = isElementInViewport(element);
 
         if (isVisible) {
-            hasBeenVisible.add(element); // Marquer l'élément comme ayant été visible
+            hasBeenVisible.add(element);
             element.classList.add('visible');
-        } else if (hasBeenVisible.has(element)) { // Ne retirer la classe que si l'élément a déjà été visible
+        } else if (hasBeenVisible.has(element)) {
             element.classList.remove('visible');
         }
     });
@@ -41,7 +38,6 @@ function animateOnScroll() {
     lastScrollTop = st <= 0 ? 0 : st;
 }
 
-// Écouteur d'événement pour le scroll avec throttling
 let ticking = false;
 window.addEventListener('scroll', () => {
     if (!ticking) {
@@ -53,7 +49,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Vérification initiale au chargement de la page
 document.addEventListener('DOMContentLoaded', () => {
     animateOnScroll();
 });

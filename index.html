@@ -26,13 +26,33 @@
 
     <main class="absolute opacity-0 transition-all duration-500 w-full">
 
-        <header class="fixed right-4 top-1/2 -translate-y-1/2 h-[80vh] w-1 z-10">
-            <div class="relative flex flex-col w-full h-full">
-                <div class="absolute right-0 top-0 h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-                <div class="absolute right-0 top-[20%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-                <div class="absolute right-0 top-[40%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-                <div class="absolute right-0 top-[60%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
-                <div class="absolute right-0 top-[80%] h-1/5 w-1 hover:w-4 bg-white hover:bg-slate-500 transition-all"></div>
+        <header class="fixed right-8 top-1/2 -translate-y-1/2 h-[80vh] w-1 z-10">
+            <div class="relative flex flex-col w-full h-full text-3xl">
+                <div class="absolute right-0 top-0 h-1/5 w-2 hover:w-4 bg-green hover:bg-green hover:rounded-s-lg transition-all duration-300 group flex items-center overflow-hidden hover:!overflow-visible">
+                    <a href="#hero" class="flex items-center h-full opacity-0 group-hover:opacity-100 group-hover:-translate-x-full transition-all duration-300">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="absolute right-0 top-[20%] h-1/5 w-2 hover:w-4 bg-red hover:bg-red hover:rounded-s-lg transition-all duration-300 group flex items-center overflow-hidden hover:!overflow-visible">
+                    <a href="#hero" class="flex items-center h-full opacity-0 group-hover:opacity-100 group-hover:-translate-x-full transition-all duration-300">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="absolute right-0 top-[40%] h-1/5 w-2 hover:w-4 bg-blue hover:bg-blue hover:rounded-s-lg transition-all duration-300 group flex items-center overflow-hidden hover:!overflow-visible">
+                    <a href="#hero" class="flex items-center h-full opacity-0 group-hover:opacity-100 group-hover:-translate-x-full transition-all duration-300">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="absolute right-0 top-[60%] h-1/5 w-2 hover:w-4 bg-yellow hover:bg-yellow hover:rounded-s-lg transition-all duration-300 group flex items-center overflow-hidden hover:!overflow-visible">
+                    <a href="#hero" class="flex items-center h-full opacity-0 group-hover:opacity-100 group-hover:-translate-x-full transition-all duration-300">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="absolute right-0 top-[80%] h-1/5 w-2 hover:w-4 bg-red hover:bg-red hover:rounded-s-lg transition-all duration-300 group flex items-center overflow-hidden hover:!overflow-visible">
+                    <a href="#hero" class="flex items-center h-full opacity-0 group-hover:opacity-100 group-hover:-translate-x-full transition-all duration-300">
+                        <span>Home</span>
+                    </a>
+                </div>
             </div>
         </header>
     
@@ -44,25 +64,27 @@
             </div>
         </section>
     
-        <section id="bricksAnimation" class="container mx-auto h-screen bg-offWhite z-10 font-semibold pt-28">
+        <section id="bricksAnimation" class="container mx-auto h-[80vh] bg-offWhite z-10 font-semibold pt-28">
             <h5 class="text-lg">UN DESIGN</h5>
             <h2 class="text-5xl">moderne et <br><span class="text-orange">original</span></h2>
-            <img id="brick" class="h-full object-contain -mt-40" src="./src/assets/bricksAnimation/0001.webp" alt="Rotation Image">
+            <img id="brick" class="h-full w-full object-contain mt-10 scale-125" src="./src/assets/bricksAnimation/0001.webp" alt="Rotation Image">
         </section>
     
         <section class="py-20 bg-grey">
             <div class="container mx-auto grid grid-cols-12 gap-5">
-                <div class="col-span-5 flex flex-col gap-6 mr-8">
-                    <div class="flex items-center gap-6">
-                        <span class="h-0.5 w-20 bg-green"></span>
-                        <h5 class="text-lg font-semibold text-green">NOTRE BEST SELLER</h5>
+                <div class="col-span-5 flex flex-col justify-between gap-6 mr-8">
+                    <div>
+                        <div class="flex items-center gap-6">
+                            <span class="h-0.5 w-20 bg-green"></span>
+                            <h5 class="text-lg font-semibold text-green">NOTRE BEST SELLER</h5>
+                        </div>
+                        <h2 class="text-5xl font-semibold text-black/80">Tapis Jaimal</h2>
                     </div>
-                    <h2 class="text-5xl font-semibold text-black/80">Tapis Jaimal</h2>
-                    <p class="pt-4  text-2xl font-medium">
+                    <p class="pt-4  text-xl font-medium">
                         Notre tapis en briques de construction. <br>
                         Transformez chaque déplacement en une expérience pour les pieds et l’esprit.
                     </p>
-                    <div class="flex gap-5 text-2xl font-medium">
+                    <div class="flex gap-5 text-xl font-medium">
                         <div class="flex gap-2 before:content-[''] before:inline-block before:w-2 before:h-2 before:bg-green before:rounded-full before:mt-3">
                             <p>
                                 Dimensions <br> de 2m x 3m
@@ -76,12 +98,12 @@
                     </div>
                     <button class="w-full px-4 py-3 bg-green text-white font-semibold">JE VIS L’EXPÉRIENCE</button>
                 </div>
-                <div class="col-span-2 grid grid-rows-3 gap-4">
-                    <img class="h-full w-full object-cover" src="./src/assets/tapis.jpg" alt="">
-                    <img class="h-full w-full object-cover" src="./src/assets/tapis.jpg" alt="">
-                    <img class="h-full w-full object-cover" src="./src/assets/tapis.jpg" alt="">
+                <div class="col-span-2 grid grid-rows-3 gap-4 max-h-[36rem]">
+                    <img class="h-full w-full object-cover" src="./src/assets/tapis/tapis_jamal_4.png" alt="">
+                    <img class="h-full w-full object-cover" src="./src/assets/tapis/tapis_jamal_3.png" alt="">
+                    <img class="h-full w-full object-cover" src="./src/assets/tapis/tapis_jamal_2.png" alt="">
                 </div>
-                <img class="col-span-5 h-[40rem] object-cover" src="./src/assets/tapis.jpg" alt="">
+                <img class="col-span-5 h-[40rem] object-cover max-h-[36rem]" src="./src/assets/tapis/tapis_jamal_1.png" alt="">
             </div>
         </section>
     
@@ -256,35 +278,35 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/green_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Anvrésapasse</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-green">Anvrésapasse</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/blue_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Sapicotinpeu</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-blue">Sapicotinpeu</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/red_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Jeudouille</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-red">Jeudouille</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/yellow_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Jaimavoirmal</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-yellow">Jaimavoirmal</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/green_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Anvrésapasse</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-green">Anvrésapasse</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/blue_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Sapicotinpeu</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-blue">Sapicotinpeu</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/red_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Jeudouille</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-red">Jeudouille</span></h4>
                     </div>
                     <div class="swiper-slide !flex flex-col items-center gap-4">
                         <img class="w-60 h-52 object-contain scale-[40%]" src="./src/assets/bricks/yellow_brick.png" alt="">
-                        <h4 class="hidden text-xl font-bold">Brique Jaimavoirmal</h4>
+                        <h4 class="hidden text-xl font-bold">Brique <span class="text-yellow">Jaimavoirmal</span></h4>
                     </div>
                 </div>
                 <div class="swiper-button-prev"></div>
@@ -295,10 +317,10 @@
         <h2 class="container mx-auto py-5 text-5xl font-semibold font-title">Pour continuer l’expérience</h2>
         <section class="px-6 py-20 bg-[#AFEDD8]">
             <div class="mini-container mx-auto grid grid-cols-3 items-center gap-20">
-                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
+                <img class="h-[30rem] object-cover" src="./src/assets/packs/PACK1.webp" alt="">
                 <div class="col-span-2 flex flex-col gap-10 w-4/5">
                     <div class="flex flex-col gap-2">
-                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
+                        <h4 class="text-2xl font-semibold">Le pack “Télétravail” Egol</h4>
                         <p>Pour faire genre de travailler</p>
                     </div>
                     <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
@@ -309,32 +331,33 @@
         </section>
 
 
-        <section class="px-6 py-20 bg-blue">
+        <section class="px-6 py-20 bg-blueGrey">
             <div class="mini-container mx-auto grid grid-cols-3 items-center gap-20">
                 <div class="col-span-2 flex flex-col gap-10 w-4/5">
                     <div class="flex flex-col gap-2">
-                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
-                        <p>Pour faire genre de travailler</p>
+                        <h4 class="text-2xl font-semibold">Le pack "Petit coin" Egol</h4>
+                        <p>Plus d’excuse pour passer du temps aux toilettes</p>
                     </div>
-                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
-                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
+                    <p>Avec notre cuvette unique, optimisez chaque instant et boostez votre productivité. Parce que même les petites pauses méritent d’être efficaces !</p>
                     <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
                 </div>
-                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
+                <img class="h-[30rem] object-cover" src="./src/assets/packs/PACK2.webp" alt="">
             </div>
         </section>
 
 
         <section class="px-6 py-20 bg-red">
             <div class="mini-container mx-auto grid grid-cols-3 items-center gap-20">
-                <img class="h-[30rem] object-cover" src="./src/assets/tapis.png" alt="">
+                <img class="h-[30rem] object-cover" src="./src/assets/packs/PACK3.webp" alt="">
                 <div class="col-span-2 flex flex-col gap-10 w-4/5">
                     <div class="flex flex-col gap-2">
-                        <h4 class="text-2xl font-semibold">Le pack “télétravail” Egol</h4>
-                        <p>Pour faire genre de travailler</p>
+                        <h4 class="text-2xl font-semibold">Le pack "Sportif du dimanche" Egol</h4>
+                        <p>Pour un entraînement qui se ressent… dès le premier pas</p>
                     </div>
-                    <p>Boostez votre productivité en transformant chaque clic en une aventure sensorielle. 
-                        Avec notre tapis de souris Egol pour une précision… unique, et un dossier de chaise pour un confort qui vous garde bien droit, travaillez différemment et sans compromis sur l’originalité !</p>
+                    <p>Envie de séances qui ne ressemblent à aucune autre ?
+                        Avec nos semelles Egol, le confort est au rendez-vous pour faire vos meilleurs chronos !  Ce pack contient également un tapis de yoga pour que vous releviez chaque posture avec courage. 
+                        <br><br>
+                        Une expérience sportive unique qui va, à coup sûr, muscler votre motivation !</p>
                     <button class="w-fit px-4 py-3 bg-black text-white">JE VIS L’EXPÉRIENCE</button>
                 </div>
             </div>
@@ -405,81 +428,74 @@
             <div class="container mx-auto">
                 <h1 class="font-medium text-4xl">FAQ</h1>
                 <div class="grid grid-cols-2 gap-x-20">
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
-                        <h3 class="faq_question relative text-2xl pr-8 cursor-pointer">
-                            Est-ce que ce tapis est confortable ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Non.</p>
+                    <div>
+                        <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
+                            <h3 class="faq_question relative text-2xl pr-8 cursor-pointer">
+                                Est-ce que ce tapis est confortable ?
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                                    <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                                </span>
+                            </h3>
+                            <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                                <p>Oh, absolument pas ! Ce tapis redéfinit l’expérience de marche. Préparez-vous à vivre chaque pas comme une aventure intense ! Ce n'est pas un tapis ordinaire : c’est une expérience unique en son genre, qui redonne du piquant à chaque déplacement.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
+                            <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                                Ce tapis est-il adapté aux enfants ?
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                                    <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                                </span>
+                            </h3>
+                            <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                                <p>Oui… et non ! Pour les enfants, c’est une formidable opportunité de tester leur capacité à éviter les obstacles. Et pour les parents, c’est l’assurance de stimuler la créativité des petits qui chercheront vite comment contourner ce sentier du courage !</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
+                            <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                                Peut-on marcher dessus pieds nus ?
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                                    <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                                </span>
+                            </h3>
+                            <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                                <p>Bien sûr, mais uniquement si vous avez des pieds en acier ! Pour le confort, nous conseillons des chaussures robustes ou l’entraînement quotidien. Marcher pieds nus sur ce tapis, c’est une façon infaillible d’atteindre la pleine conscience en un rien de temps.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
-                        <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Ce tapis est-il adapté aux enfants ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Oui.</p>
+                    <div>
+                        <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
+                            <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                                Quelle est la durée de vie du tapis ?
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                                    <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                                </span>
+                            </h3>
+                            <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                                <p>Ce tapis est conçu pour résister aux passages quotidiens et aux coups les plus durs. Avec des soins appropriés (et de bonnes chaussures), il durera des années. Par contre, vos pieds, eux, pourraient y penser à deux fois…</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
-                        <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Peut-on marcher dessus pieds nus ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Oui.</p>
+                        <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
+                            <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                                Est-il facile d'entretien ?
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                                    <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                                </span>
+                            </h3>
+                            <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                                <p>Très ! Un coup d’aspirateur, et hop, c’est parti. Et puis, chaque nettoyage est une aventure en soi, ajoutant au charme de ce tapis qui attire les regards et surprend les invités.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
-                        <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Quelle est la durée de vie du tapis ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Longue.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
-                        <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Est-il facile d'entretien ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Oui.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
-                        <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Ce tapis convient-il aux animaux de compagnie ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Oui.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-left">
-                        <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
-                            Y'a t-il une politique de retour ?
-                            <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
-                                <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
-                            </span>
-                        </h3>
-                        <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
-                            <p>Non.</p>
+                        <div class="flex flex-col pt-6 mt-5 pb-8 border-b border-white/45 animate-right">
+                            <h3 class="faq_question relative text-2xl pr-10 cursor-pointer">
+                                Ce tapis convient-il aux animaux de compagnie ?
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 rotate-45">
+                                    <img src="./src/assets/plus.svg" alt="plus" class="w-6 rotate-45">
+                                </span>
+                            </h3>
+                            <div class="faq_answer max-h-0 transition-all duration-500 overflow-hidden">
+                                <p>Bien sûr ! Les chats et les chiens adoreront ses reliefs uniques, parfaits pour les grattouilles et les séances de massage des coussinets. Ils apprendront vite à l’éviter, mais pour les plus courageux, c’est un terrain de jeu sensoriel hors du commun.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
