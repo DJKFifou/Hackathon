@@ -3,21 +3,51 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "cinzel";
-  src: url("./src/fonts/Cinzel/Cinzel.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "BaiJamjuree";
   src: url("./src/fonts/BaiJamjuree/BaiJamjuree-Regular.ttf") format("truetype");
   font-display: swap;
+}
+
+.bai-jamjuree-medium {
+  font-family: "Bai Jamjuree", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bai-jamjuree-semibold {
+  font-family: "Bai Jamjuree", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bai-jamjuree-bold {
+  font-family: "Bai Jamjuree", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Noka";
   src: url("./src/fonts/Noka/Noka-Light.otf") format("opentype");
   font-display: swap;
+}
+
+.noka-medium {
+  font-family: "Noka", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.noka-semibold {
+  font-family: "Noka", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noka-bold {
+  font-family: "Noka", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 * {
